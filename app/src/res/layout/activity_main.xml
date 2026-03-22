@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2E7D32"
+        android:elevation="4dp"
+        app:title="Registro de Contacto"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
+
+            <!-- Logo UTH -->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="Logo UTH" />
+
+            <!-- Area de Firma Arriba -->
+            <ImageView
+                android:id="@+id/ivFirma"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#F0F0F0"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btnCapturarFirma"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Firma Digital"
+                android:backgroundTint="#2E7D32"
+                android:textColor="@color/white"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Campos de Texto -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jeferson Martinez"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telefono"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/etTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="99226644"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:inputType="phone"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latitud"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/etLatitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="14.48"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Longitud"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/etLongitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="-88.78"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/btnGetLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OBTENER UBICACIÓN EN TIEMPO REAL"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="#F0F0F0"
+                android:textColor="@android:color/black"/>
+
+            <!-- Foto (Sigue siendo requisito de la rubrica) -->
+            <ImageView
+                android:id="@+id/ivFoto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#F0F0F0"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/btnTomarFoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TOMAR FOTOGRAFIA"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Botones Finales con Colores de Imagen -->
+            <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Salvar Contacto"
+                android:backgroundTint="#2E7D32"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btnVerContactos"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Contactos Salvados"
+                android:textColor="@color/white"
+                android:backgroundTint="#0D47A1"/>
+
+            <!-- Campo oculto para email -->
+            <EditText android:id="@+id/etDescripcion" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

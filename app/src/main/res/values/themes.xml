@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Cambiado a .NoActionBar para que no aparezcan dos barras -->
+    <style name="Theme.PM2ExamenGrupo2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colores de marca -->
+        <item name="colorPrimary">#2E7D32</item>
+        <item name="colorPrimaryVariant">#1B5E20</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">#4CAF50</item>
+        <item name="colorSecondaryVariant">#388E3C</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Color de la barra de estado (batería/hora) -->
+        <item name="android:statusBarColor">#2E7D32</item>
+    </style>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo"
+            android:textColor="@android:color/black"
+            android:textColorHint="#757575"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teléfono"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="99001122"
+            android:textColor="@android:color/black"
+            android:textColorHint="#757575"
+            android:inputType="phone"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latitud"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etLatitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="14.00"
+            android:textColor="@android:color/black"
+            android:textColorHint="#757575"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Longitud"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etLongitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="-87.00"
+            android:textColor="@android:color/black"
+            android:textColorHint="#757575"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <!-- Campo oculto por si se requiere mantener el correo internamente pero no editarlo -->
+        <EditText android:id="@+id/etDescripcion" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>
